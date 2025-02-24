@@ -17,6 +17,7 @@ void imprimirTriangulo(int altura) {
 
 int main() {
     int n1, n2, n3;
+    cin >> n1 >> n2 >> n3;
     imprimirTriangulo(n1);
     imprimirTriangulo(n2);
     imprimirTriangulo(n3);
