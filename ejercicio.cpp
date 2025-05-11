@@ -3,23 +3,22 @@
 using namespace std;
 
 void imprimirTriangulo(int altura) {
-    for (int i = 1; i <= altura; i++)
-    {
-        //Mientras el valor de j sea menos que i, va a imprimir j-veces el *, simboliza columnas
-        for (int j = 0; j < i; j++)
-        {
+    for (int i = 1; i <= altura; i++) {
+        for (int j = 1; j <= i; j++) {
             cout << "*";
         }
-        //Salto de linea
-        cout << "\n";
+        cout << endl;
     }
 }
 
 int main() {
-    int n1, n2, n3;
-    cin >> n1 >> n2 >> n3;
-    imprimirTriangulo(n1);
-    imprimirTriangulo(n2);
-    imprimirTriangulo(n3);
+    int h1, h2, h3;
+
+    cin >> h1 >> h2 >> h3;
+
+    imprimirTriangulo(h1);
+    imprimirTriangulo(h2);
+    imprimirTriangulo(h3);
+
     return 0;
 }
